@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- 不支持IE8兼容模式 IE 运行最新的渲染模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 网页宽度为设备宽度，打开初始缩放比例1-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- 引入bootstrap css文件-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			padding-top: 100px;
+		}
+	</style>
+	<!--加入IE 6 7 8 兼容html5标签html5shiv.js-->
+	<!-- 加入IE 6 7 8 兼容css3样式respond.min.js-->
+	<!--[if lt IE 9]>
+	<script src="css/html5shiv.js"></script>
+	<script src="css/respond.min.js"></script>
+	<![endif]-->
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/my_css.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="alert alert-info">
+		请修改相应信息
+		</div>
+		<div class="alert alert-success">
+		谢谢，操作成功！
+		</div>
+		<div class="alert alert-warning">
+		<b>Warning！</b>您已经操作失败两次，还有最后一次机会
+		</div>
+		<div class="alert alert-danger">
+		对不起，您刚才的操作失败
+		</div>
+	</div>
+
+	<h3>可关闭警示框</h3>
+	<div class="row">
+		<div class="alert alert-success alert-dismissable" role="alert">
+			<button class="close" type="button" data-dismiss="alert">&times;</button>
+			这是一个可以关闭的success警示框
+		</div>
+	</div>
+
+	<h3>带Link的提示框</h3>
+	<div class="row">
+		<div class="alert alert-success alert-dismissable">
+			<span>
+				这是一个<a href="#" class="alert-link">Link</a>警示框
+			</span>
+			<button class="close" type="button" data-dismiss="alert">&times;</button>
+		</div>
+	</div>
+</div>
+
+<!--引入bootstrap js支持由于bootstrap所有js使用jquery 所以先引入jquery js文件-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

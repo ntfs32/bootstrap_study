@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- 不支持IE8兼容模式 IE 运行最新的渲染模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 网页宽度为设备宽度，打开初始缩放比例1-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- 引入bootstrap css文件-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!--加入IE 6 7 8 兼容html5标签html5shiv.js-->
+	<!-- 加入IE 6 7 8 兼容css3样式respond.min.js-->
+	<!--[if lt IE 9]>
+	<script src="css/html5shiv.js"></script>
+	<script src="css/respond.min.js"></script>
+	<![endif]-->
+	<title></title>
+</head>
+<body>
+<div class="container">
+
+<h2>代码（一）</h2>
+<p>本节内容相对来说比较简单，一般在个人博客上使用的较为频繁，用于显示代码的风格。在Bootstrap主要提供了三种代码风格：</p>
+<p class="text-warning">代码中&lt;&gt; 需要使用"& gt;"，"& lt;"代替</p>
+<ul>
+<li>1、使用<code>&lt;code&gt;&lt;/code&gt;</code>标签来显示单行内联代码</li>
+<li>2、使用<pre>&lt;code&gt;&lt;/code&gt;</pre>来显示多行块代码</li>
+<li>3、使用<kbd>Ctrl+C</kbd>来显示用户输入代码</li>
+</ul>
+
+
+<h2>代码（二）</h2>
+<p>&lt;pre&gt;用于显示大块代码 不想暂用太大篇幅可以使用类名<code>“.pre-scrollable”</code> 控制代码块最大高度340px 超出会出现滚动条</p>
+<pre class="pre-scrollable">
+<ol>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+
+</ol>
+
+</pre>
+</div>
+
+<!--引入bootstrap js支持由于bootstrap所有js使用jquery 所以先引入jquery js文件-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

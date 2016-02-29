@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- 不支持IE8兼容模式 IE 运行最新的渲染模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 网页宽度为设备宽度，打开初始缩放比例1-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- 引入bootstrap css文件-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			padding-top: 100px;
+		}
+	</style>
+	<!--加入IE 6 7 8 兼容html5标签html5shiv.js-->
+	<!-- 加入IE 6 7 8 兼容css3样式respond.min.js-->
+	<!--[if lt IE 9]>
+	<script src="css/html5shiv.js"></script>
+	<script src="css/respond.min.js"></script>
+	<![endif]-->
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/my_css.css">
+</head>
+<body>
+<div class="container">
+<button class="btn btn-primary" id="showpane">点我显示</button>
+<ul class="list-group col-md-offset-3 col-md-4">
+	<li class="list-group-item active">系统公告</li>
+	<li class="list-group-item">
+		<!-- 选项卡组件 -->
+		<ul class="nav nav-pills" id="mytab" role="tablist">
+			<li class="active"><a href="#gonggao" data-toggle="tab">公告</a></li>
+			<li><a href="#userinfo" data-toggle="tab">用户信息</a></li>
+			<li><a href="#message" data-toggle="tab">消息<span class="badge">23</span></a></li>
+			
+		</ul>
+		<!-- 选项卡内容组件 -->
+		<div class="tab-content" id="mytabcontent">
+			<div class="tab-pane fade in active" id="gonggao">
+			<h3 class="text-info">SVG图像和IE8-10</h3>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;在 Internet Explorer 8-10 中，设置为 .img-responsive 的 SVG 图像显示出的尺寸不匀称。为了解决这个问题，在出问题的地方添加<code> width: 100% </code>; 即可。Bootstrap 并没有自动为所有图像元素设置这一属性，因为这会导致其他图像格式出现错乱。</p>
+			</div>
+			<div class="tab-pane fade" id="message">
+			<p>消息内容</p>
+			</div>
+			<div class="tab-pane fade" id="userinfo">
+			<p>用户资料中心</p>
+			</div>
+		</div>	
+
+	</li>
+</ul>
+
+</div>
+<!--引入bootstrap js支持由于bootstrap所有js使用jquery 所以先引入jquery js文件-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$("#showpane").click(function(){
+		$("#userinfo").active();
+	});
+</script>
+</body>
+</html>
